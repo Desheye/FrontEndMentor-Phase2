@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/NWSLETTER/CSSFOLDER/grid1.css">
+    <link rel="stylesheet" href="/NWSLETTER/CSSFOLDER/grid2.css">
+    <link rel="stylesheet" href="/NWSLETTER/CSSFOLDER/mobile.version.css">
+    <link rel="stylesheet" href="/NWSLETTER/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <title>Newsletter</title>
+</head>
+<body>
+    <div class="container">
+        <div class="grid main__grid">
+            <div class="grid1">
+                <h1>Stay Updated!</h1>
+                <p>Join 60,000+ product managers recieving monthly <br>
+                updates on: </p>
+
+                <ul>
+                    <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <p>Product discovery and building what matters</p>
+                    </li>
+                    <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <p>Measuring to ensure updates are a success</p>
+                    </li>
+                    <li>
+                        <i class="bi bi-check-circle-fill"></i>
+                        <p>And much more!</p>
+                    </li>
+                </ul>
+
+                <div class="form__grid" id="myForm">
+                    <div class="form__group field">
+                        <input type="input" class="form__field" placeholder="" autocomplete="none" name="name" id='name' required />
+                        <label for="name" class="form__label">
+                            <div class="content__name">Email Address</div>
+                        </label>
+                    </div>
+                    <span class="errorMsg">Invalid email address</span>
+                    <div class="btn" id="btn1">
+                        <button type="submit" id="btn">subscribe to monthly newsletter</button>
+                    </div>
+                </div>
+                <div class="modal__page" id="mP">
+                    <header>
+                    <i class="bi bi-check-circle-fill"></i>
+                    <h3>Thanks For Subscribing</h3>
+                </header>
+                <p>A confirmation email has been sent to <span id="modalEmail"></span><br>
+                    Please open it and click the button inside to confirm your subscription </p>
+                <button id="modalButton">Dismiss</button>
+                </div>
+
+            </div>
+            <div class="grid2">
+                <div class="canvas"></div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="/NWSLETTER/index.j"></script>
+</body>
+</html>

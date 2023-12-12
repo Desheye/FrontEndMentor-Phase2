@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(5, 5, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .grid{
+    width: 800px;
+    height: 600px;
+    border: 2px solid;
+    padding: .8rem;
+    display: flex;
+    background-color: wheat;
+}
+.container .grid .grid1{
+    margin-top: 5rem;
+    width: 100%;
+    
+    font-family: monospace;
+}
+.grid1 h1{
+    font-size: 3vw; 
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.grid1 p{
+    font-size: 1rem;
+}
+.grid1 ul{
+    padding: .9rem;
+}
+.grid1 ul li{
+    list-style: none;
+    display: flex;
+    margin-top: 1rem;
+}
+.grid1 ul li .bi{
+    color: orangered;
+    list-style: none;
+    display: flex;
+    margin-right: .8rem;
+}
+.grid1 .form__grid{
+    width: 100%;
+}
+.grid1 .form__grid .errorMsg{
+    margin: .1rem 0;
+    font-size: .7rem;
+    height: 0px;
+    display: none;
+}
+.grid1 .form__grid .btn{
+    width: 90%;
+    margin-top: 1rem;
+}
+.grid1 .form__grid .btn button{
+    width: 100%;
+    padding: .5rem;
+    border: none;
+    border-radius: .3rem;
+    background-color: rgb(185, 62, 17);
+    color: wheat;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+/*MODAL PAGE*/
+.grid1 .modal__page{
+    font-size: 1.1rem;
+    margin-bottom: .1rem;
+    width: 400px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    width: 80%;
+    /* Adjust the width as needed */
+    max-width: 300px;
+    /* Set a maximum width if desired */
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(250, 171, 142);
+    border: 2px solid coral;
+
+    text-align: center;
+    z-index: 9;
+}
+.grid1 header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: monospace;
+    padding: .4rem;
+    font-size: 1.2rem;
+}
+.grid1 .modal__page p{
+   
+}
+.grid1 .modal__page button{
+    width: 50%;
+    height: 30px;
+    background-color: rgb(73, 24, 6);
+    color: wheat;
+    border: none;
+    border-radius: .2rem;
+    margin: .7rem auto;
+}
+/*MODAL PAGE ENDS HERE*/
+.grid1 .form__group{
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    height: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.grid1 .form__field{
+    outline: none;
+    border: none;
+    background: transparent;
+    border-bottom: .1rem solid;
+    padding-top: 1.5rem;
+    font-family: monospace;
+    font-size: 1rem;
+    width: 100%;
+    height: 100%;
+}
+.grid1 .form__label{
+    position: absolute;
+    bottom: 0px;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: .1rem solid black;
+}
+.grid1 .form__label::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: .1rem solid coral;
+    transform: translateX(-100%);
+}
+.content__name{
+    position: absolute;
+    bottom: 4px;
+    left: 0px;
+    transition: all .4s ease-in-out;
+}
+.form__group input:focus + .form__label .content__name,
+ .form__group .form__field:valid + .form__label .content__name{
+    transform: translateY(-150%);
+    font-size: 1rem;
+}
+.form__group .form__field:focus .form__label::after,
+.form__field:valid + .form__label::after{
+    transform: translateX(0%);
+}
+
+
