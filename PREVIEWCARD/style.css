@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body, html{
+    font-family: monospace;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(59, 58, 58);
+    display: flex;
+    justify-content: center;
+}
+.grid{
+    width: 80%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: goldenrod;
+    border-radius: .4rem;
+}
+.preview_card{
+    width: 400px;
+    height: 500px;
+    border: 1px solid rgb(18, 5, 5);
+    border-radius: .3rem;
+    background-color:beige;
+    box-shadow: .4rem .3rem 0 rgb(91, 12, 12);
+}
+.card{
+    width: 95%;
+    height: 45%;
+    background-image: url(/PREVIEWCARD/svg/illustration-article.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: .4rem auto;
+    border-radius: .4rem;
+}
+.card-info{
+    width: 100%;
+    padding: .9rem;
+}
+.card-info h3{
+    width: max-content;
+    background-color: gold;
+    padding: .2rem .9rem;
+    border-radius: .4rem;
+    margin: .3rem 0;
+}
+.card-info p{
+    margin: .5rem 0;
+    letter-spacing: .1rem;
+}
+.card-info h1{
+    margin: .2rem 0;
+    font-weight: bold;
+    color: rgb(141, 122, 17);
+}
+.face-id{
+    display: flex;   
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem 0;
+    width: 155px;
+}
+.face-id img{
+    width: 70px;
+    height: 80px;
+    border-radius: 50%;
+}
+.face-id h2{
+    font-family: monospace;
+    margin: .5rem 0;
+}
+
+@media screen and (max-width: 600px) {
+    .preview_card{
+        width: 400px;
+        height: 550px;
+    }
+  }
