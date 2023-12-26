@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Simple Prompt Example</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="input">
+            <form action="#">
+                <label for="#">Day</label>
+                <input type="text" placeholder="day" id="inputDay">
+            </form>
+
+            <form action="#">
+                <label for="#">Month</label>
+                <input type="text" placeholder="month" id="inputMonth">
+            </form>
+            <form action="#">
+                <label for="#">Year</label>
+                <input type="text" value="" autocomplete="off" placeholder="year" id="inputYear">
+            </form>
+        </div>
+
+        <div class="grid2">
+            <div class="line"></div>
+            <img src="/images/icon-arrow.svg" alt="" id="btn" class="button">
+        </div>
+
+
+        <!-- Add the id attribute to the h2 element to make it accessible in JavaScript -->
+        <h2 id="displayAge" class="display"> <span id="yearsSpan"></span></h2>
+        <h2 id="displayMonth" class="display"><span id="monthSpan"></span></h2>
+        <h2 id="displayDay" class="display"><span id="daySpan"></span></h2>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>
