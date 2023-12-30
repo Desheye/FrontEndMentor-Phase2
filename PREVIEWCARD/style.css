@@ -31,7 +31,7 @@ body, html{
 .card{
     width: 95%;
     height: 45%;
-    background-image: url(/PREVIEWCARD/svg/illustration-article.svg);
+    background-image: url(/svg/illustration-article.svg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
